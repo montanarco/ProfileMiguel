@@ -2173,7 +2173,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
+		background: #ffffff url("../../images/pic01.jpg");
 		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
@@ -2198,7 +2198,7 @@ input, select, textarea {
 			}
 
 			#banner header p {
-				color: #d52349;
+				color: #25e03e;
 				padding: 0;
 				font-style: normal;
 				margin: 0;
@@ -2285,6 +2285,47 @@ input, select, textarea {
 		#main .major h2 {
 			background: #f7f7f7 url("images/bg02.png");
 		}
+	
+		.ball {
+			width: 50px;
+			height: 50px;
+			background-color: red;
+			border-radius: 50%;
+			position: absolute;
+			transition: background-color 0.2s;
+		}
+
+		html.sr .load-hidden {
+			visibility: hidden;
+		  }
+		  
+		  .widget-list {
+			width: 80%;
+			display: flex;
+			flex-wrap: wrap; /* Allows items to wrap to the next row */
+			gap: 20px; /* 20px space between widgets */
+			margin: 0;
+			padding: 0;
+			border-radius: 8px;
+			list-style-type: none;
+		}
+		
+		.widget {
+			flex: 1 0 calc(16.66% - 20px); /* Ensure 6 widgets per row, accounting for the gap */
+			box-sizing: border-box;
+			height: auto; /* Adjust height based on content */
+			margin: 0.5rem;
+			line-height: 50px;
+			text-align: center;
+			border-radius: 4px;
+			margin: 0;
+		}
+		  
+		  /* extension */
+		  html.sr .widget {
+			visibility: hidden;
+		  }
+		  
 
 /* Footer */
 

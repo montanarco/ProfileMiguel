@@ -2299,27 +2299,31 @@ input, select, textarea {
 			visibility: hidden;
 		  }
 		  
-		  .widget-list {
-			width: 80%;
+		.widget-columns {
 			display: flex;
-			flex-wrap: wrap; /* Allows items to wrap to the next row */
-			gap: 20px; /* 20px space between widgets */
-			margin: 0;
+			justify-content: space-between;
+			width: 100%; /* Ensure this spans the full container width */
 			padding: 0;
-			border-radius: 8px;
-			list-style-type: none;
+			margin: 0;
+			gap: 20px;
+		}
+		
+		.widget-column {
+			flex: 1 0 16.66%; /* 6 equal-width columns */
+			display: flex;
+			flex-direction: column;
+			gap: 20px; /* Space between widgets */
 		}
 		
 		.widget {
-			flex: 1 0 calc(16.66% - 20px); /* Ensure 6 widgets per row, accounting for the gap */
 			box-sizing: border-box;
-			height: auto; /* Adjust height based on content */
-			margin: 0.5rem;
 			line-height: 50px;
 			text-align: center;
 			border-radius: 4px;
-			margin: 0;
+			width: 100%; /* Ensure the widget fills the column width */
+			background-color: lightgrey; /* Temporary background for visibility */
 		}
+		
 		  
 		  /* extension */
 		  html.sr .widget {

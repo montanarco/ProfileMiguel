@@ -56,7 +56,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const widgetColumns = document.querySelectorAll('.widget-column');
-    const colorOptions = ['red', 'green', 'blue', 'yellow', 'purple', 'orange', 'cyan', 'lime', 'teal', 'indigo'];
+    const colorOptions = ['#ded3b3', '#3880bd', '#95d4e4', '#952c4f','#0b0935','#177e96','#e44a66','#133784','#3abcd9','#86be6c','green'];
     const possibleHeights = [100, 150, 200, 250];
 
     function getRandomHeight() {

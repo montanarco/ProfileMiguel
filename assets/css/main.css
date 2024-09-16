@@ -72,6 +72,12 @@ input, select, textarea {
 	appearance: none;
 }
 
+.images-center {
+	display: flex; 
+	justify-content: center; 
+	margin-bottom: 50px;
+}
+
 /* Basic */
 
 	html {

@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Miguel Montanez Profile</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+
+<body class="no-sidebar is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<section id="header">
+			<div id="headerTemplate"></div>
+		</section>
+
+		<!-- Main -->
+		<section id="main">
+			<div class="container">
+
+				<!-- Content -->
+				<article class="box post">
+					<header>
+						<h3>Simulated LoRa Sensor Network as Support for Route Planning in Solid Waste Collection</h3>
+						<p>Miguel Angel Montañez Gomez & Luis Fernando Niño Vasquez </p>
+					</header>
+					<div class="images-center">
+						<img src="../images/sensors-levels.png" style="height: 600px;" alt="" />
+					</div>
+					<h3>Abstract</h3>
+					<br />
+					<p>
+						Mass production and population growth have produced an increase in the generation of municipal
+						solid waste (MSW) in urban settlements. In consequence, efficient treatment of waste has become
+						a challenge for cleaning entities, possibly because they continue performing collecting
+						operations using fixed periodic routes that exhaustively go across neighbourhood streets in
+						search of every dumpster. Furthermore, in these operations recyclable material is not separated
+						from disposable one, at least in Bogota, thus causing a negative impact on the environment. This
+						work aims to prototype a sensing system that generates routes based on the actual fulfilment
+						level reported by dumpsters. For this purpose, dumpsters were equipped with a level measurement
+						device that uses a proximity ultrasonic sensor. Information was transmitted using a LPWAN
+						(LoRa), and collected data were used to determine which of the dumpsters needs to be collected
+						in the route planned for a specific date, according to the levels reported. Since an operation
+						requires many collecting trucks, a K-means method is used to group dumpsters that are
+						geographically close. A single district of Bogota was selected for demonstration purposes. The
+						collecting sequence was calculated using an open Web service, whose results are shown on an
+						Android mobile application. The mobile app uses the Google Maps routing service. The system
+						shows important reduction of saturation and overflow of containers.
+					</p>
+					<section>
+						<div class="images-center">
+							<img src="../images/dumpster locations.png" style="height: 400px;"
+								alt="dumpsters locations" />
+							<div style="width: 5%;"></div>
+							<img src="../images/generated-routes.png" style="height: 400px;" alt="generated routes" />
+						</div>
+						<header>
+							<h3>Conclusions</h3>
+						</header>
+						<p>
+							Municipal solid waste (MSW) has been increasing in recent years, impacting public health,
+							lifestyles, and the environment. To address this, city governments have made efforts to
+							manage waste sustainably. This research proposes an efficient sensing system that enables
+							cities to make data-driven decisions for waste collection. A prototype was implemented using
+							LoRa technology to transmit data from dumpsters to a GIS database, allowing the generation
+							of optimized collection routes. These routes prioritize dumpsters with high fill levels,
+							reducing travel time and increasing efficiency, with routes displayed in a mobile app to
+							assist truck drivers.
+						</p>
+						<p>
+							The system addresses the issue of outdated information that hinders dynamic route planning
+							for MSW collection. By integrating IoT and GIS technologies across different
+							layers—physical, networking, data processing, and application—it provides benefits such as
+							cleaner streets, better waste classification, and support for a circular economy. The
+							research highlights the importance of updated data in improving operations and demonstrates
+							the feasibility of using IoT-enabled sensing systems for waste management. For real-world
+							deployment, considerations include sensor accuracy, energy management, node density, and
+							terrain characteristics for more precise route planning.
+						</p>
+						<ul class="divided">
+							<li><a href="https://link.springer.com/chapter/10.1007/978-3-031-06371-8_15"
+									target="_blank"><h3>reference to the article</h3></a></li>
+						</ul>
+						<footer>
+							<a href="/index.html" class="button alt">Get Back</a>
+						</footer>
+					</section>
+				</article>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<section id="footer">
+			<div id="footerTemplate"></div>
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.dropotron.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+	<script src='../assets/js/header.js'></script>
+	<script src='../assets/js/footer.js'></script>
+
+</body>
+
+</html>

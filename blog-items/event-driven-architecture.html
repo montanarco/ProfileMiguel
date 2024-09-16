@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Miguel Montanez Profile</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+
+<body class="no-sidebar is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<section id="header">
+			<div id="headerTemplate"></div>
+		</section>
+
+		<!-- Main -->
+		<section id="main">
+			<div class="container">
+
+				<!-- Content -->
+				<article class="box post">
+					<div class="images-center">
+						<a href="#"><img src="../images/event-driven-arch.png" alt="" /></a>
+					</div>
+					<header>
+						<h2>Event-Driven Architecture explained simply </h2>
+					</header>
+					<p>
+						Imagine two people trying to deliver a package. In the traditional or imperative approach, they
+						must coordinate perfectly: the sender needs to ensure the receiver is present when the package
+						arrives, otherwise, the delivery fails. The sender spends time waiting, and the entire process
+						is dependent on both parties being in sync. This situation is similar to distributed software
+						systems, where one part must wait for another to be ready before proceeding making operations
+						long lasting but also making the coordination complex as there are more parts interacting.
+					</p>
+					<p>
+						Now, let's change the scenario: what if instead of direct coordination, the sender drops the
+						package at a post office? The sender only needs to know where the package is going. The mail
+						service takes care of the logistics, and the receiver can pick up the package at their
+						convenience. This is how Event-Driven Architecture (EDA) works, using a messaging service (like
+						the post office) to decouple the sender and receiver. They no longer need to be synchronized,
+						reducing wait times and allowing processes to happen asynchronously.
+					</p>
+					<section>
+						<header>
+							<h3>What Is Event-Driven Architecture?</h3>
+						</header>
+						<p>
+							Event-driven architecture is a modern software design pattern that allows different
+							applications, devices, or systems to communicate in a loosely coupled way by using events.
+							In this context, an "event" is any significant change or occurrence that an application or
+							system can detect, like a customer placing an order or a sensor recording a temperature
+							change.
+						</p>
+						<p>
+							Rather than systems communicating directly and synchronously (like in our first example of
+							two people meeting for package delivery), EDA introduces an event broker (the post office).
+							The event broker is responsible for receiving and routing events (packages) to the right
+							destinations. This allows systems to publish events (send packages) without needing to know
+							the details of who will receive them or when they will be processed.
+						</p>
+					</section>
+					<section>
+						<section>
+							<header>
+								<h3>How Events Work</h3>
+							</header>
+							<p>
+								In an event-driven system, applications respond to changes or "events." An event could
+								be something like:
+							<ul>
+								<li>A customer placing an order.</li>
+								<li>An inventory system updating stock.</li>
+								<li>A temperature sensor sending new data. (IoT services)</li>
+							</ul>
+							</p>
+							<p>
+								When these events occur, they are sent to the event broker, which then routes the
+								information to all the systems that need to respond. The key is that the sender (e.g.,
+								the customer’s order system) doesn’t need to know how or when the receiver (e.g., the
+								shipping system) will act on that event. Just like with the mail service, the sender
+								drops off the package (publishes an event) and moves on.
+							</p>
+						</section>
+						<section>
+							<header>
+								<h3>Why Use Event-Driven Architecture?</h3>
+							</header>
+							<p>
+								The main advantage of EDA is that it enables asynchronous communication. Systems no
+								longer need to wait for a response from one another, allowing them to function
+								independently. This reduces waiting times, improves scalability, and enhances real-time
+								responsiveness.
+
+							</p>
+							<p>
+								EDA also allows you to quickly and easily add new services. Imagine a new mail route
+								opening: the sender doesn’t need to change anything—they can continue using the same
+								system, and the new mail route simply gets added to the event broker (mail service).
+								Similarly, with EDA, you can add new applications that subscribe to events without
+								changing the core system, increasing agility.
+							</p>
+						</section>
+					</section>
+					<header>
+						<h3>The Benefits of EDA</h3>
+					</header>
+					<ul>
+						<li><strong> Improved Responsiveness:</strong> Since events are processed as they occur, systems
+							can react in real-time to changes. Whether it’s a customer action or a system update, the
+							information flows immediately.</li>
+						<li><strong> Scalability:</strong> Applications can scale more easily because they don’t need to
+							handle everything at once or wait for other systems to respond. The event broker distributes
+							events to multiple services without direct dependencies.</li>
+						<li><strong> Loose Coupling:</strong> Systems are independent of each other. A sender doesn’t
+							need to know how the receiver will process the event or when. This reduces the complexity of
+							system interactions.</li>
+
+					</ul>
+					<section>
+						<header>
+							<h3>Conclusion</h3>
+						</header>
+						<p>
+							Event-driven architecture, like a modern mail service, introduces a messaging system that
+							allows for flexible, asynchronous communication between applications. It decouples the
+							sender and receiver, improving efficiency and scalability. By leveraging this pattern,
+							businesses can ensure real-time responsiveness and faster reaction times, allowing them to
+							deliver better services and adapt quickly to changing needs.
+						</p>
+					</section>
+					<footer>
+						<a href="/index.html" class="button alt">Get Back</a>
+					</footer>
+		</section>
+
+		</article>
+
+	</div>
+	</section>
+
+	<!-- Footer -->
+	<section id="footer">
+		<div id="footerTemplate"></div>
+	</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.dropotron.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+	<script src='../assets/js/header.js'></script>
+	<script src='../assets/js/footer.js'></script>
+
+</body>
+
+</html>

@@ -2956,4 +2956,10 @@ input, select, textarea {
 				padding: 40px 0 20px 0;
 			}
 
+			.designed{
+				-webkit-text-size-adjust: none;
+				font-size: 5px;
+				color: #222222;
+			}
 	}
+	

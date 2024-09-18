@@ -158,7 +158,7 @@ input, select, textarea {
 	}
 
 	a {
-		color: #d52349;
+		color: #295F98;
 		text-decoration: underline;
 	}
 
@@ -1620,7 +1620,7 @@ input, select, textarea {
 		cursor: pointer;
 		border: 0;
 		border-radius: 5px;
-		background: #d52349;
+		background: #295F98;
 		color: #fff !important;
 		font-weight: 700;
 		outline: 0;
@@ -1662,7 +1662,7 @@ input, select, textarea {
 			input[type="reset"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background: #353132;
+				background: #295F98;
 			}
 
 			input[type="button"].alt:active,
@@ -1834,7 +1834,7 @@ input, select, textarea {
 			position: absolute;
 			left: 0;
 			top: 1.3em;
-			background-color: #d52349;
+			background-color: #295F98;
 			height: 3.5em;
 			text-align: center;
 			color: #fff;
@@ -1849,7 +1849,7 @@ input, select, textarea {
 				position: absolute;
 				bottom: 0;
 				right: -1.2em;
-				border-left: solid 1.25em #d52349;
+				border-left: solid 1.25em #295F98;
 				border-top: solid 1.8em transparent;
 				border-bottom: solid 1.8em transparent;
 			}
@@ -2055,11 +2055,11 @@ input, select, textarea {
 				}
 
 			.icon.featured.alt2 {
-				background-color: #827a7c;
+				background-color: #228B22;
 			}
 
 				.icon.featured.alt2:after {
-					border-top-color: #827a7c;
+					border-top-color: #228B22;
 				}
 
 /* Page Wrapper */
@@ -2123,7 +2123,7 @@ input, select, textarea {
 				}
 
 				#nav > ul > li.current > a {
-					background: #d52349;
+					background: #295F98;
 					color: #fff !important;
 					font-weight: 700;
 				}
@@ -2833,6 +2833,8 @@ input, select, textarea {
 					margin-top: 0;
 					font-size: 1em;
 				}
+
+
 
 		/* Divided */
 

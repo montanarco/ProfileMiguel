@@ -17,3 +17,13 @@ To run this project locally, you can use Python's built-in HTTP server.
     ```
 
 4.  Open your browser and navigate to `http://localhost:8000`.
+
+## github sync
+```bash
+gh auth login
+```
+
+## netlify sync
+```bash
+netlify deploy --prod
+```
